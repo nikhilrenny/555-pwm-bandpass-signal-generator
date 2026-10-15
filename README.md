@@ -49,6 +49,8 @@ More plots: [`images/simulation/`](images/simulation).
 
 ### Hardware (breadboard)
 
+![Breadboard implementation](images/hardware/setup/implementation.jpg)
+
 ![Bench setup](images/hardware/setup/bench_with_equipment.jpg)
 
 | Parameter | Target | Simulation | Measured |
