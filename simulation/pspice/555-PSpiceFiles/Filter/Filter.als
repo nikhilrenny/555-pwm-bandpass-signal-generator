@@ -1,0 +1,15 @@
+.ALIASES
+C_C1            C1(1=N72897 2=N72905 ) CN @555.Filter(sch_1):INS72835@ANALOG.C.Normal(chips)
+E_U16           U16(OUT=N72937 +=N72905 -=N72977 ) CN @555.Filter(sch_1):INS72851@ANALOG.OPAMP.Normal(chips)
+R_R1            R1(1=0 2=N72905 ) CN @555.Filter(sch_1):INS73023@ANALOG.R.Normal(chips)
+E_U15           U15(OUT=N72897 +=N72833 -=N72897 ) CN @555.Filter(sch_1):INS72787@ANALOG.OPAMP.Normal(chips)
+R_R54           R54(1=0 2=N72905 ) CN @555.Filter(sch_1):INS72959@ANALOG.R.Normal(chips)
+E_U14           U14(OUT=N72949 +=N72777 -=N72997 ) CN @555.Filter(sch_1):INS72873@ANALOG.OPAMP.Normal(chips)
+R_R2            R2(1=N72977 2=N72937 ) CN @555.Filter(sch_1):INS72979@ANALOG.R.Normal(chips)
+E_U12           U12(OUT=N72777 +=N72937 -=N72777 ) CN @555.Filter(sch_1):INS72809@ANALOG.OPAMP.Normal(chips)
+R_R64           R64(1=N72997 2=N72949 ) CN @555.Filter(sch_1):INS72999@ANALOG.R_var.Normal(chips)
+R_R4            R4(1=0 2=N72997 ) CN @555.Filter(sch_1):INS73087@ANALOG.R.Normal(chips)
+R_R3            R3(1=0 2=N72977 ) CN @555.Filter(sch_1):INS73071@ANALOG.R.Normal(chips)
+R_R65           R65(1=0 2=N72949 ) CN @555.Filter(sch_1):INS74485@ANALOG.R.Normal(chips)
+V_V1            V1(+=N72833 -=0 ) CN @555.Filter(sch_1):INS74568@SOURCE.VAC.Normal(chips)
+.ENDALIASES

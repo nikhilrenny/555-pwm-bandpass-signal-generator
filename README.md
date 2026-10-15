@@ -45,7 +45,7 @@ A three-stage analogue signal chain, designed, simulated in PSpice and built and
 |---|---|---|
 | ![](images/simulation/pwm/555_393_waveforms.jpg) | ![](images/simulation/filter/bode_and_phase.jpg) | ![](images/simulation/output/amp_waveforms.jpg) |
 
-More plots: [`images/simulation/`](images/simulation).
+More plots: [`images/simulation/`](images/simulation). PSpice/OrCAD source: [`simulation/pspice/`](simulation/pspice) (`555.dsn` design, `555.opj` project, plus netlists and simulation profiles). Open `555.opj` in OrCAD/PSpice to rerun.
 
 ### Hardware (breadboard)
 
@@ -81,6 +81,7 @@ images/
   schematics/   block diagram + PWM, filter, output and full-system schematics
   simulation/   PSpice plots (pwm/, filter/, output/)
   hardware/     setup/ (photos + key scope shots), scope_pwm_filter/, scope_full_chain/
+simulation/     PSpice design, project, netlists and profiles
 data/           measurement tables as CSV (PWM+filter sweep, full chain, 555 frequency/duty tests)
 docs/           marker feedback
 ```

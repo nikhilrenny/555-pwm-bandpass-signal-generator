@@ -1,0 +1,664 @@
+
+**** 03/20/26 01:40:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sig"  [ d:\projects\555\555-PSpiceFiles\SCHEMATIC1\sig.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sig.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 555
+X_U1         0 0 0 N14559 N143690 N14587 N14559 0 TLC555_6
+R_R2         N14587 N14559  1k TC=0,0 
+R_R3         0 N14587 {50k*0.5+.001}
+V_V1         N14559 0 9Vdc
+R_R4         N143690 0  100 TC=0,0 
+
+**** RESUMING sig.cir ****
+.END
+
+**** 03/20/26 01:40:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sig"  [ d:\projects\555\555-PSpiceFiles\SCHEMATIC1\sig.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.XD8.DZ_18V X_U1.XD7.DZ_18V X_U1.XD2.DZ_18V X_U1.XD1.DZ_18V 
+          IS    5.000000E-12    5.000000E-12    5.000000E-12    5.000000E-12 
+           N  :00.000000E+27  :00.000000E+27  :00.000000E+27  :00.000000E+27 
+          BV   18              18              18              18            
+         IBV    5.000000E-03    5.000000E-03    5.000000E-03    5.000000E-03 
+          EG     .1              .1              .1              .1          
+
+
+               X_U1.XD4.DZ_18V X_U1.XD3.DZ_18V X_U1.XD6.DZ_18V X_U1.XD5.DZ_18V 
+          IS    5.000000E-12    5.000000E-12    5.000000E-12    5.000000E-12 
+           N  :00.000000E+27  :00.000000E+27  :00.000000E+27  :00.000000E+27 
+          BV   18              18              18              18            
+         IBV    5.000000E-03    5.000000E-03    5.000000E-03    5.000000E-03 
+          EG     .1              .1              .1              .1          
+
+
+               X_U1.XMN3.DMODN X_U1.XMN5.DMODN X_U1.XMp9.DMOD1 X_U1.XMp6.DMOD1 
+          IS    1.000000E-12    1.000000E-12    1.000000E-12    1.000000E-12 
+           N  :00.000000E+27  :00.000000E+27  :00.000000E+27  :00.000000E+27 
+
+
+               X_U1.XMp5.DMOD1 X_U1.XMp1.DMODP 
+          IS    1.000000E-12    1.000000E-12 
+           N  :00.000000E+27  :00.000000E+27 
+
+
+**** 03/20/26 01:40:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sig"  [ d:\projects\555\555-PSpiceFiles\SCHEMATIC1\sig.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.XMN17.TLC55X_NMOSD_HV 
+               NMOS            
+       LEVEL    3            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD   70.000000E-09 
+         VTO     .8          
+          KP   60.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+         RSH   10            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ  144.000000E-06 
+        CJSW  800.000000E-12 
+        CGSO   33.150180E-12 
+        CGDO   33.150180E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       THETA     .18         
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMN16.TLC55X_NMOSD_HV 
+               NMOS            
+       LEVEL    3            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD   70.000000E-09 
+         VTO     .8          
+          KP   60.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+         RSH   10            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ  144.000000E-06 
+        CJSW  800.000000E-12 
+        CGSO   33.150180E-12 
+        CGDO   33.150180E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       THETA     .18         
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMP16.TLC55X_PMOSD_HV 
+               PMOS            
+       LEVEL    3            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD   70.000000E-09 
+         VTO    -.85         
+          KP   30.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+         RSH   10            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ  240.000000E-06 
+        CJSW    1.760000E-09 
+        CGSO   33.150180E-12 
+        CGDO   33.150180E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       THETA     .22         
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMN10.TLC55X_NMOSD_HV_L1 
+               NMOS            
+       LEVEL    1            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD   70.000000E-09 
+         VTO     .8          
+          KP   60.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.000000E-03 
+         RSH   10            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ  144.000000E-06 
+        CJSW  800.000000E-12 
+        CGSO   33.150180E-12 
+        CGDO   33.150180E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMN2.TLC55X_NMOSD_MV 
+               NMOS            
+       LEVEL    1            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD   70.000000E-09 
+         VTO     .55         
+          KP   60.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ   36.000000E-06 
+        CJSW  200.000000E-12 
+        CGSO    8.287545E-12 
+        CGDO    8.287545E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMP4.TLC55X_PMOSD_MV 
+               PMOS            
+       LEVEL    1            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD   70.000000E-09 
+         VTO    -.6          
+          KP   30.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ   36.000000E-06 
+        CJSW  200.000000E-12 
+        CGSO    8.287545E-12 
+        CGDO    8.287545E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMP3.TLC55X_PMOSD_MV 
+               PMOS            
+       LEVEL    1            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD   70.000000E-09 
+         VTO    -.6          
+          KP   30.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ   36.000000E-06 
+        CJSW  200.000000E-12 
+        CGSO    8.287545E-12 
+        CGDO    8.287545E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMPR1F.TLC55X_PMOSD_LV 
+               PMOS            
+       LEVEL    1            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD  300.000000E-09 
+         VTO    -.14         
+          KP   30.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ  240.000000E-06 
+        CJSW    1.760000E-09 
+        CGSO   33.150180E-12 
+        CGDO   33.150180E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMPR1E.TLC55X_PMOSD_LV 
+               PMOS            
+       LEVEL    1            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD  300.000000E-09 
+         VTO    -.14         
+          KP   30.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ  240.000000E-06 
+        CJSW    1.760000E-09 
+        CGSO   33.150180E-12 
+        CGDO   33.150180E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMPR1D.TLC55X_PMOSD_LV 
+               PMOS            
+       LEVEL    1            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD  300.000000E-09 
+         VTO    -.14         
+          KP   30.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ  240.000000E-06 
+        CJSW    1.760000E-09 
+        CGSO   33.150180E-12 
+        CGDO   33.150180E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMPR1C.TLC55X_PMOSD_LV 
+               PMOS            
+       LEVEL    1            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD  300.000000E-09 
+         VTO    -.14         
+          KP   30.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ  240.000000E-06 
+        CJSW    1.760000E-09 
+        CGSO   33.150180E-12 
+        CGDO   33.150180E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMPR1B.TLC55X_PMOSD_LV 
+               PMOS            
+       LEVEL    1            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD  300.000000E-09 
+         VTO    -.14         
+          KP   30.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ  240.000000E-06 
+        CJSW    1.760000E-09 
+        CGSO   33.150180E-12 
+        CGDO   33.150180E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMPR1A.TLC55X_PMOSD_LV 
+               PMOS            
+       LEVEL    1            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD  300.000000E-09 
+         VTO    -.14         
+          KP   30.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ  240.000000E-06 
+        CJSW    1.760000E-09 
+        CGSO   33.150180E-12 
+        CGDO   33.150180E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1.XMN1.TLC55X_NMOSD_MV 
+               NMOS            
+       LEVEL    1            
+           L   10.000000E-06 
+           W  100.000000E-06 
+          LD   70.000000E-09 
+         VTO     .55         
+          KP   60.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.000000E-03 
+          IS   10.000000E-15 
+          JS    0            
+          PB     .65         
+        PBSW     .65         
+          CJ   36.000000E-06 
+        CJSW  200.000000E-12 
+        CGSO    8.287545E-12 
+        CGDO    8.287545E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 03/20/26 01:40:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sig"  [ d:\projects\555\555-PSpiceFiles\SCHEMATIC1\sig.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.XMN15.SWN  X_U1.XMP15.SWN  X_U1.XMN9.SWN   
+         RON   23.64286        18.8604        166.6667       
+        ROFF    1.000000E+09    1.000000E+09    1.000000E+09 
+         VON     .55             .49            1.14         
+        VOFF     .49             .55             .14         
+
+
+**** 03/20/26 01:40:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sig"  [ d:\projects\555\555-PSpiceFiles\SCHEMATIC1\sig.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14559)    9.0000 (N14587)    8.6538 (N143690)    5.0346                       
+
+(X_U1.15)     .0378                   (X_U1.23)     .1632                       
+
+(X_U1.25)     .1504                   (X_U1.29)    8.8600                       
+
+(X_U1.30)    0.0000                   (X_U1.32)     .1358                       
+
+(X_U1.33)     .2715                   (X_U1.34)    4.6358                       
+
+(X_U1.QFF)    1.0000                  (X_U1.GOUT) 212.8E-09                     
+
+(X_U1.RESI)    9.0000                 (X_U1.RESO) 314.2E-06                     
+
+(X_U1.THRI)-290.1E-27                 (X_U1.THRO)    8.8613                     
+
+(X_U1.THRS)    -.0040                 (X_U1.TRGC)     .1358                     
+
+(X_U1.TRGI)-290.1E-27                 (X_U1.TRGO)     .7769                     
+
+(X_U1.TRGS)     .7832                 (X_U1.CONTI)     .2715                    
+
+(X_U1.XMN3.10)     .1400              (X_U1.XMN5.10)     .1400                  
+
+(X_U1.XMp1.10)    8.8600              (X_U1.XMp5.10)    8.1500                  
+
+(X_U1.XMp6.10)    8.1500              (X_U1.XMp9.10)    8.1500                  
+
+(X_U1.XRSFF.XU2.1)     .1227          
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.107E-02
+    X_U1.XMN3.V1   7.829E-07
+    X_U1.XMN5.V1   4.254E-09
+    X_U1.XMp9.V1   9.150E-12
+    X_U1.XMp6.V1   9.000E-12
+    X_U1.XMp5.V1   8.367E-12
+    X_U1.XMp1.V1   1.760E-11
+
+    TOTAL POWER DISSIPATION   4.60E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/20/26 01:40:07 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-sig"  [ d:\projects\555\555-PSpiceFiles\SCHEMATIC1\sig.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .63
+

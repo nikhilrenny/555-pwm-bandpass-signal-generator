@@ -1,0 +1,69 @@
+
+**** 04/30/26 16:46:14 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "Filter-op"  [ d:\projects\555\555-PSpiceFiles\Filter\op.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "op.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 5m 0 1u SKIPBP 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Filter.net" 
+
+
+
+**** INCLUDING Filter.net ****
+* source 555
+C_C1         N72897 N72905  1u  TC=0,0 
+E_U16         N72937 0 VALUE {LIMIT(V(N72905,N72977)*1E6,-15V,+15V)}
+R_R1         0 N72905  100k TC=0,0 
+E_U15         N72897 0 VALUE {LIMIT(V(N72833,N72897)*1E6,-15V,+15V)}
+R_R54         0 N72905  100k TC=0,0 
+E_U14         N72949 0 VALUE {LIMIT(V(N72777,N72997)*1E6,-15V,+15V)}
+R_R2         N72977 N72937  100k TC=0,0 
+E_U12         N72777 0 VALUE {LIMIT(V(N72937,N72777)*1E6,-15V,+15V)}
+R_R64         N72997 N72949 {10k*0.5+.001}
+R_R4         0 N72997  39k TC=0,0 
+R_R3         0 N72977  10k TC=0,0 
+R_R65         0 N72949  1k TC=0,0 
+V_V1         N72833 0 DC 1 AC 1 
+
+**** RESUMING op.cir ****
+.END
+
+
+          JOB CONCLUDED
+
+**** 04/30/26 16:46:14 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "Filter-op"  [ d:\projects\555\555-PSpiceFiles\Filter\op.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .28
+
