@@ -1,4 +1,4 @@
-# 555 PWM Signal Generator with 6th-Order Band-Pass Filter and Variable-Gain Output
+# 555 PWM Signal Generator with Independent Frequency and Duty Control
 
 BEng (Hons) Electronic Engineering, Year 2 — *SEF515 Electronic Circuits*, Solent University (2025–26).
 Author: Nikhil Renny. **Mark: 83%** — see [marker feedback](docs/FEEDBACK.md).
@@ -27,6 +27,8 @@ A three-stage analogue signal chain, designed, simulated in PSpice and built and
 **Filter.** 6th-order Butterworth, realised as three cascaded second-order multiple-feedback (MFB) band-pass sections (TL074), C = 1.5 nF, f0 ≈ 10 kHz. Stage Qs from the Butterworth coefficients (1.932, 1.414, 0.517): 0.517, 0.707, 1.932. A 4th-order version failed the −40 dB requirement in simulation, hence 6th order. Resistor values were tuned empirically after the calculated R2 values were not realisable for stages 1–2 (see feedback).
 
 **Output.** Buffer → 1 µF / 100 kΩ DC block (≈1.6 Hz) → non-inverting pre-amp (×11) → buffer → adjustable non-inverting stage (39 kΩ + 20 kΩ trimpot).
+
+**Key feature: fully independent, continuously variable frequency and duty cycle.** Frequency is tuned with a single potentiometer (1–98 kHz measured) and duty cycle with a separate comparator reference trimpot, so neither control affects the other. Measured duty stayed at 16.8–17.9% across the whole frequency sweep with no component changes.
 
 ## Results
 
