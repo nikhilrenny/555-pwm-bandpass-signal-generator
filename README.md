@@ -28,6 +28,8 @@ A three-stage analogue signal chain, designed, simulated in PSpice and built and
 
 **Output.** Buffer → 1 µF / 100 kΩ DC block (≈1.6 Hz) → non-inverting pre-amp (×11) → buffer → adjustable non-inverting stage (39 kΩ + 20 kΩ trimpot).
 
+**Key feature: fully independent, continuously variable frequency and duty cycle.** Frequency is tuned with a single potentiometer (1–98 kHz measured) and duty cycle with a separate comparator reference trimpot, so neither control affects the other. Measured duty stayed at 16.8–17.9% across the whole frequency sweep with no component changes.
+
 ## Results
 
 ### Simulation (PSpice)
