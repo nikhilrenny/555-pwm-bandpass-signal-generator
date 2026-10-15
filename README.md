@@ -1,4 +1,4 @@
-# 555 PWM Signal Generator with 6th-Order Band-Pass Filter and Variable-Gain Output
+# 555 PWM Signal Generator with Independent Frequency and Duty Control
 
 BEng (Hons) Electronic Engineering, Year 2 — *SEF515 Electronic Circuits*, Solent University (2025–26).
 Author: Nikhil Renny. **Mark: 83%** — see [marker feedback](docs/FEEDBACK.md).
